@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -10,34 +9,46 @@
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-image: url('images/bfm_background.png');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       min-height: 100vh;
       color: white;
       text-align: center;
     }
+
     header {
       padding: 30px 10px 10px;
+      position: relative;
     }
+
     .logo {
       height: 60px;
+      display: block;
+      margin: 0;
+      position: absolute;
+      top: 30px;
+      left: 30px;
     }
+
     h1 {
       font-size: 3em;
       color: #e0b100;
     }
+
     p {
       font-size: 1.2em;
       margin: 0 20px 30px;
       line-height: 1.6;
     }
+
     .quote {
       font-weight: bold;
       color: #ffcc00;
       font-size: 1.2em;
     }
+
     .packages {
       display: flex;
       justify-content: center;
@@ -45,15 +56,18 @@ background-attachment: fixed;
       flex-wrap: wrap;
       margin-top: 30px;
     }
+
     .package {
       background-color: #1c1c1c;
       border-radius: 10px;
       padding: 20px;
       width: 300px;
     }
+
     .package h2 {
       color: #e0b100;
     }
+
     .placeholder {
       width: 100%;
       height: 180px;
@@ -62,28 +76,19 @@ background-attachment: fixed;
     }
   </style>
 </head>
-<!-- TŁO -->
-<body style="background-image: url('./images/bfm_background.png'); background-size: cover; background-position: center; background-attachment: fixed;">
 
-    <!-- LOGO -->
-    <div style="text-align: center; margin-top: 30px;">
-        <img src="./images/Logo_BFM_bez_tla.png" alt="Logo BFM" style="height: 100px;">
-    </div>
-
-    <!-- RESZTA TREŚCI -->
-    <h1>MISJA BFM</h1>
-    <p>Tworzymy nowe pokolenie ludzi...</p>
-
-</body>
-
+<body>
+  <!-- LOGO w headerze -->
   <header>
-    <img src="./images/Logo_BFM_bez_tla.png" alt="Logo BFM" class="logo" />
+    <img src="images/Logo_BFM_bez_tla.png" alt="Logo BFM" class="logo" />
   </header>
+
+  <!-- RESZTA TREŚCI -->
   <main>
     <h1>MISJA BFM</h1>
     <p>Tworzymy nowe pokolenie ludzi, którzy zamiast prosić – działają. Uczymy, jak zarabiać, analizować i podejmować snajperskie decyzje.</p>
     <p class="quote">„Nie czekaj, aż ktoś da Ci wędkę. My uczymy Cię, jak ją zrobić samemu.”</p>
-    
+
     <div class="packages">
       <div class="package">
         <div class="placeholder"></div>
