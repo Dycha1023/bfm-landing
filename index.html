@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BFM - Better Future Makers</title>
   <style>
-    body {
+    html, body {
+      height: 100%; /* to ważne przy tłu */
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
-      background-image: url('images/bfm_background.png');
+      background-image: url('./images/bfm_background.png'); /* ścieżka poprawna */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      min-height: 100vh;
+      min-height: 100%;
       color: white;
       text-align: center;
     }
@@ -24,9 +29,8 @@
     }
 
     .logo {
-      height: 60px;
+      height: 120px; /* większe logo */
       display: block;
-      margin: 0;
       position: absolute;
       top: 30px;
       left: 30px;
@@ -35,6 +39,7 @@
     h1 {
       font-size: 3em;
       color: #e0b100;
+      margin-top: 100px; /* żeby nie nachodziło na logo */
     }
 
     p {
@@ -55,6 +60,7 @@
       gap: 40px;
       flex-wrap: wrap;
       margin-top: 30px;
+      padding-bottom: 50px; /* więcej miejsca na dole */
     }
 
     .package {
@@ -78,12 +84,10 @@
 </head>
 
 <body>
-  <!-- LOGO w headerze -->
   <header>
-    <img src="images/Logo_BFM_bez_tla.png" alt="Logo BFM" class="logo" />
+    <img src="./images/Logo_BFM_bez_tla.png" alt="Logo BFM" class="logo" />
   </header>
 
-  <!-- RESZTA TREŚCI -->
   <main>
     <h1>MISJA BFM</h1>
     <p>Tworzymy nowe pokolenie ludzi, którzy zamiast prosić – działają. Uczymy, jak zarabiać, analizować i podejmować snajperskie decyzje.</p>
